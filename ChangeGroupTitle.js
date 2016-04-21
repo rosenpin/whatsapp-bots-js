@@ -1,6 +1,7 @@
 //Reuires Jquery 
 /*
 אם שם הקבוצה הוא "שייביץ דיקטטור", השם ישתנה לשייביץ דיקטטור
+*/
 function dispatch(target, text) {
  var evt = document.createEvent("TextEvent");    
  evt.initTextEvent ("textInput", true, true, window, text, 0, "en-US");
