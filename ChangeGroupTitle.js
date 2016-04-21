@@ -10,8 +10,7 @@ function run(){
 	    function(){
         	$(".icon-pencil").click()
 	        setTimeout(function(){
-		        $(".input-line").html("")
-			      dispatch($(".input-line"),"textInput","שייביץ דיקטטור")
+			 dispatch($(".input-line"),"textInput","שייביץ דיקטטור")
 		        setTimeout(function(){$(".icon-checkmark").click()},500)
 		      },200)    
 	        run()
