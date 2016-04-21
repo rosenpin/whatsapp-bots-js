@@ -1,5 +1,4 @@
 //Reuires Jquery 
-
 function dispatch(target, eventType, char) {
  var evt = document.createEvent("TextEvent");    
  evt.initTextEvent (eventType, true, true, window, char, 0, "en-US");
