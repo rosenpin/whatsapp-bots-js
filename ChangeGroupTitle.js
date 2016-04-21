@@ -1,7 +1,7 @@
 //Reuires Jquery 
-function dispatch(target, eventType, char) {
+function dispatch(target, text) {
  var evt = document.createEvent("TextEvent");    
- evt.initTextEvent (eventType, true, true, window, char, 0, "en-US");
+ evt.initTextEvent ("textInput", true, true, window, text, 0, "en-US");
  target.focus();
  target.dispatchEvent(evt);
 }
@@ -11,7 +11,7 @@ function run(){
 	    function(){
         	$(".icon-pencil").click()
 	        setTimeout(function(){
-			dispatch($(".input-line"),"textInput","שייביץ דיקטטור")
+			dispatch($(".input-line"),"שייביץ דיקטטור")
 		        setTimeout(function(){$(".icon-checkmark").click()},500)
 		      },200)    
 	        run()
