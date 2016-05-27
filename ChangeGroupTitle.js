@@ -1,6 +1,6 @@
 //Reuires Jquery 
 /*
-אם שם הקבוצה הוא "שייביץ דיקטטור", השם ישתנה לשייביץ דיקטטור
+אם שם הקבוצה הוא לא "שייביץ דיקטטור", השם ישתנלאה לשייביץ דיקטטור
 */
 function dispatch(target, text) {
  var evt = document.createEvent("TextEvent");    
